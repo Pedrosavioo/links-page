@@ -26,6 +26,8 @@ body *{
     width: 360px;
     margin: auto;
     margin: 56px auto 0px;
+
+    padding: 0px 24px;
 }
 
 #profile {
@@ -50,6 +52,8 @@ ul {
     display: flex;
     flex-direction: column; /* alinhar em colunas*/
     gap: 16px; /* espaço entre as colunas */
+
+    padding: 24px 0;
 }
 
 ul li a {
@@ -74,4 +78,15 @@ ul li a {
 ul li a:hover {
     border: 1.5px solid #ffffff;
     background: rgba(255, 255, 255, 0.05);
+}
+
+/* social links */
+#social-links {
+    display: flex;
+    justify-content: center;    
+    gap: 32px;
+
+    padding: 16px 0;
+
+    font-size: 24px;
 }
