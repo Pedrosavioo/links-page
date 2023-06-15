@@ -7,11 +7,19 @@
 :root {
     --text-color: #ffffff;
     --background: url(../assets/bg-mobile-dark.jpg);
+    --stoke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(55, 255, 255, 0.2);
 }
 
 .light{
     --text-color: #000000;
     --background: url(../assets/bg-mobile-light.jpg);
+    --stoke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -76,8 +84,8 @@ ul li a {
     
     padding: 16px 24px;
 
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: var(--surface-color);
+    border: 1px solid var(--stoke-color);
     border-radius: 8px;
 
     backdrop-filter: blur(4px);
@@ -86,8 +94,8 @@ ul li a {
 }
 
 ul li a:hover {
-    border: 1.5px solid #ffffff;
-    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid var(--text-color);
+    background: var(--surface-color-hover);
 }
 
 /* social links */
@@ -111,7 +119,7 @@ ul li a:hover {
 }   
 
 #social-links a:hover{
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--highlight-color);
 }
 
 footer {
