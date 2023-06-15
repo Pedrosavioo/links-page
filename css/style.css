@@ -4,6 +4,16 @@
     box-sizing: content-box; /* medida da caixa: ser medida através da da BORDA da caixa. */
 }
 
+:root {
+    --text-color: #ffffff;
+    --background: url(../assets/bg-mobile-dark.jpg);
+}
+
+.light{
+    --text-color: #000000;
+    --background: url(../assets/bg-mobile-light.jpg);
+}
+
 body {
     /*
     background-image: url(../assets/bg-mobile-dark.jpg);
@@ -14,12 +24,12 @@ body {
     /* -- atalho background
             background: color imagem no-repeat position/size;
     */
-    background: url(../assets/bg-mobile-dark.jpg) no-repeat top center/cover;
+    background: var(--background) no-repeat top center/cover;
 }
 
 body *{
     font-family: 'Inter', sans-serif;
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 #container{
@@ -102,4 +112,10 @@ ul li a:hover {
 
 #social-links a:hover{
     background: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+    font-size: 14px;
+    text-align: center;
+    padding: 24px 0;
 }
