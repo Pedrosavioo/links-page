@@ -7,7 +7,7 @@
 :root {
     --text-color: #ffffff;
     --background: url(../assets/bg-mobile-dark.jpg);
-    --stoke-color: rgba(255, 255, 255, 0.5);
+    --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
     --highlight-color: rgba(55, 255, 255, 0.2);
@@ -17,7 +17,7 @@
 .light{
     --text-color: #000000;
     --background: url(../assets/bg-mobile-light.jpg);
-    --stoke-color: rgba(0, 0, 0, 0.5);
+    --stroke-color: rgba(0, 0, 0, 0.5);
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
     --highlight-color: rgba(0, 0, 0, 0.1);
@@ -51,7 +51,6 @@ body *{
 }
 
 /* profile */
-
 #profile {
     text-align: center;
     padding: 24px;
@@ -66,14 +65,24 @@ body *{
     line-height: 24px;
     margin-top: 8px;    
 }
-/* switch */
 
+/* switch */
 #switch button {
     width: 32px;
     height: 32px;
     background: #ffffff var(--switch-bg-url) no-repeat center;
     border: 0;
     border-radius: 50%;
+}
+
+#switch span{
+    display: block; 
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
 }
 
 
@@ -99,7 +108,7 @@ ul li a {
     padding: 16px 24px;
 
     background: var(--surface-color);
-    border: 1px solid var(--stoke-color);
+    border: 1px solid var(--stroke-color);
     border-radius: 8px;
 
     backdrop-filter: blur(4px);
