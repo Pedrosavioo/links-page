@@ -7,7 +7,9 @@ function toggleMode() {
 
     if(html.classList.contains("light")){
         img.setAttribute('src', 'assets/bg-light.png');
+        img.setAttribute('alt', 'Gato de óculos curtindo o sol na praia');
     } else {
        img.setAttribute('src', 'assets/bg-dark.png')
+       img.setAttribute('alt', 'Gato no telhado de uma casa em uma noite de lua cheia');
     }
 }
